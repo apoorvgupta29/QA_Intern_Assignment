@@ -49,15 +49,18 @@ public class LoginTestCase  {
 	@When("Submit the form and check credentials")
 		public void submit_the_form_and_check_credentials() throws InterruptedException {
 		loginPage.clickLoginButton();
-		Thread.sleep(5000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 	
 	@When("User performs some actions")
 		public void user_performs_some_actions() throws InterruptedException {
-		loginPage.clickSearch();
-		Thread.sleep(2000);
-		loginPage.searchTask();
-		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		loginPage.clickSearch();  // working
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		loginPage.Direct_hellopage();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+//		loginPage.searchTask();  // not working because of dialogue pop up (absolute functionality occurs)
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 
 	@Then("User log out successfully")

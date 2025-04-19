@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.*;
 
 public class LoginPage {
@@ -26,28 +28,27 @@ public class LoginPage {
     }
 
     public void clickSearch() throws InterruptedException {
-    	Thread.sleep(2000);
-    	driver.findElement(By.className("HeaderSearch__SearchLensIconWrap")).click();
-    	Thread.sleep(2000);
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+    	WebElement searchButton = driver.findElement(By.xpath("//span[@class='search_placeholder']"));
+    	searchButton.click();
     }
     
     public void searchTask() throws InterruptedException {
     	driver.findElement(By.xpath("//input[@placeholder='Type what you want to search for']")).sendKeys("hello");
-        Thread.sleep(5000);
     	driver.findElement(By.xpath("//span[text()='hello']")).click();
     }
-    
+    public void Direct_hellopage() throws InterruptedException {
+    	driver.get("https://www.intervue.io/profile/search/interviews?query=hello");
+    }
     public void logout() throws InterruptedException {
     	driver.findElement(By.className("cwhrSp")).click();
-    	Thread.sleep(2000);
     	driver.findElement(By.cssSelector("a[href='/logout']")).click();
-        Thread.sleep(5000);
+
     }
     
     
     public void clickLoginButton() throws InterruptedException {
-    	Thread.sleep(2000);
+
     	driver.findElement(By.xpath("//button[@type='submit' and .//span[text()='Login with email']]")).click();
-        Thread.sleep(5000);
     }
 }

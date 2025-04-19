@@ -1,31 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 40.045 s <<< FAILURE! - in TestSuite
-runScenario(testrunner)  Time elapsed: 26.992 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":".HeaderSearch__SearchLensIconWrap"}
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 73.559 s <<< FAILURE! - in TestSuite
+runScenario(testrunner)  Time elapsed: 28.218 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
   (Session info: chrome=135.0.7049.96)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [68fcf03d36eb870e806e1a920773fcf3, findElement {using=class name, value=HeaderSearch__SearchLensIconWrap}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51383}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51383/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68fcf03d36eb870e806e1a920773fcf3
-
-runScenario(testrunner)  Time elapsed: 12.282 s  <<< FAILURE!
-org.openqa.selenium.remote.UnreachableBrowserException: 
-Error communicating with the remote browser. It may have died.
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e32ad2ad9baa444dc67955e15b29c278, clickElement [id]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51511/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e32ad2ad9baa444dc67955e15b29c278)] -> link text: Login]
-Session ID: e32ad2ad9baa444dc67955e15b29c278
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-Caused by: java.net.SocketException: Connection reset
+Command: [d86a0bcb05b65bc3b19bd43f68779bf4, findElement {using=xpath, value=//span[@class='search_placeholder']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62950/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d86a0bcb05b65bc3b19bd43f68779bf4
 

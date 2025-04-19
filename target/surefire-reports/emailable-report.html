@@ -31,12 +31,14 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">39.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">2</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">72.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="2">testrunner</td><td><a href="#m1"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">2</td><td>1745061858938</td><td class="numi">39275</td></tr><tr class="failedodd"><td><a href="#m2"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">2</td><td>1745061858938</td><td class="numi">39275</td></tr>
+<tr class="failedodd"><td rowspan="2">testrunner</td><td><a href="#m1"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1745067300154</td><td class="numi">28213</td></tr><tr class="failedodd"><td><a href="#m2"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1745067300154</td><td class="numi">28213</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">testrunner</td><td><a href="#m3"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1745067256096</td><td class="numi">44057</td></tr><tr class="passedodd"><td><a href="#m4"><b>runScenario</b> (cucumber) ("Runs Cucumber Scenarios")</a></td><td class="numi">1</td><td>1745067256096</td><td class="numi">44057</td></tr>
 </table>
 <h1>Test</h1>
 <h2 id="m1">testrunner:runScenario</h2>
@@ -46,15 +48,15 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <td>&quot;Login Functionality&quot;</td>
 </tr>
 <tr><td style="padding-left:3em" colspan="2">
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.HeaderSearch__SearchLensIconWrap&quot;}
+<p>invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
   (Session info: chrome=135.0.7049.96)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [68fcf03d36eb870e806e1a920773fcf3, findElement {using=class name, value=HeaderSearch__SearchLensIconWrap}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51383}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51383/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68fcf03d36eb870e806e1a920773fcf3</p>
+Command: [d86a0bcb05b65bc3b19bd43f68779bf4, findElement {using=xpath, value=//span[@class=&apos;search_placeholder&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62950/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d86a0bcb05b65bc3b19bd43f68779bf4</p>
 java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 <br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 <br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -66,11 +68,11 @@ java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Direc
 <br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 <br/>at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-<br/>at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+<br/>at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-<br/>at pageObjects.LoginPage.clickSearch(LoginPage.java:30)
-<br/>at stepdefinition.LoginTestCase.user_performs_some_actions(LoginTestCase.java:57)
+<br/>at pageObjects.LoginPage.clickSearch(LoginPage.java:32)
+<br/>at stepdefinition.LoginTestCase.user_performs_some_actions(LoginTestCase.java:58)
 <br/>at ✽.User performs some actions(file:///G:/Intervue/Login_Test/src/test/resources/features/login.feature:8)
 <br/>1 lines not shown
 </td></tr>
@@ -82,77 +84,6 @@ java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Direc
 <tr class="param stripe"><td>&quot;Checking Login Credentials&quot;</td>
 <td>&quot;Login Functionality&quot;</td>
 </tr>
-<tr><td style="padding-left:3em" colspan="2">
-<p>Error communicating with the remote browser. It may have died.
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e32ad2ad9baa444dc67955e15b29c278, clickElement [id]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51511/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e32ad2ad9baa444dc67955e15b29c278)] -&gt; link text: Login]
-Session ID: e32ad2ad9baa444dc67955e15b29c278</p>
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-<br/>at pageObjects.LoginPage.clickLoginLink(LoginPage.java:13)
-<br/>at stepdefinition.LoginTestCase.User_is_in_Home_page_and_navigate_to_login_page(LoginTestCase.java:27)
-<br/>at ✽.User is in Home page and Navigate to login page(file:///G:/Intervue/Login_Test/src/test/resources/features/login.feature:5)
-<br/>1 lines not shown
-<p>Caused by java.io.IOException: HTTP/1.1 header parser received no bytes</p>
-org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:497)
-<br/>at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-<br/>at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-<br/>at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:384)
-<br/>at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-<br/>at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-<br/>at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-<br/>at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-<br/>at java.base/java.lang.Thread.run(Thread.java:1575)
-<br/>1 lines not shown
-<p>Caused by HTTP/1.1 header parser received no bytes</p>
-java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:971)
-<br/>at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-<br/>at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:456)
-<br/>at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-<br/>at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-<br/>at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:384)
-<br/>at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-<br/>at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-<br/>at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-<br/>at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-<br/>at java.base/java.lang.Thread.run(Thread.java:1575)
-<br/>1 lines not shown
-<p>Caused by HTTP/1.1 header parser received no bytes</p>
-java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:440)
-<br/>at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
-<br/>at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-<br/>at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-<br/>at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
-<br/>at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-<br/>at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-<br/>at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-<br/>at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-<br/>at java.base/java.lang.Thread.run(Thread.java:1575)
-<br/>1 lines not shown
-<p>Caused by Connection reset</p>
-java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
-<br/>at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
-<br/>at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
-<br/>at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
-<br/>at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
-<br/>at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-<br/>at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-<br/>at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-<br/>at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-<br/>at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-<br/>at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-<br/>at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-<br/>at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1478)
-<br/>at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1423)
-<br/>at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-<br/>at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1423)
-<br/>1 lines not shown
-</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
