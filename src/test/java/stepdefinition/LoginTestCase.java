@@ -56,6 +56,7 @@ public class LoginTestCase  {
 		public void user_performs_some_actions() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		loginPage.clickSearch();  // working
+		Thread.sleep(5000);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		loginPage.Direct_hellopage();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));

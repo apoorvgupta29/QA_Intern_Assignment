@@ -4,12 +4,11 @@ package stepdefinition;
 import java.io.File;
 import java.io.IOException;
 
-
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import com.google.common.io.Files;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -20,40 +19,37 @@ import io.cucumber.java.Scenario;
 
 public class Reportgeneration 
 {
-	public static ExtentReports extent;
-	public static ExtentTest test; 
 	public static WebDriver driver;
+	public static ExtentReports extent = new ExtentReports ("G:\\Intervue\\Login_Test\\Report\\intervue.html", true);; 
+    public static ThreadLocal<ExtentTest> testThread = new ThreadLocal<>();
+    
+    @Before
+    public void beforeScenario(Scenario scenario) {
+        ExtentTest test = extent.startTest(scenario.getName());
+        testThread.set(test);
+       driver = new ChromeDriver();
+    }
 
-
-	
-	@Before
-	public void start(Scenario s)
-	{
-		if(extent==null)
-		{	
-			extent = new ExtentReports ("G:\\Intervue\\Login_Test\\Report\\intervue.html", true);
-		}
-		driver = new ChromeDriver();
-		String tc = s.getName();
-		test = extent.startTest(tc);
-	}
-
-	@After
-	public void afterScenario(Scenario scenario) throws IOException
-	{
-		if(scenario.isFailed())
-		{
-			test.log(LogStatus.FAIL, "Test is failed");
-			File scrFile;
-			scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			Files.copy(scrFile, new File("G:\\Intervue\\Login_Test\\Screenshots\\testcase_" + scenario.getName() +  ".jpeg"));  
-		}
-		else {
-			test.log(LogStatus.PASS, "Test is pass");
-		}
-		driver.quit();
-		extent.flush();
-	}
+    @After
+    public void afterScenario(Scenario scenario) {
+        ExtentTest test = testThread.get();
+        if (scenario.isFailed()) {
+            test.log(LogStatus.FAIL, "Scenario failed: " + scenario.getName());
+            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            String screenshotPath ="G:\\Intervue\\Login_Test\\Screenshots\\testcase_" + scenario.getName() + ".jpeg";
+            try {
+                FileUtils.copyFile(src, new File(screenshotPath));
+                test.log(LogStatus.INFO, "Screenshot saved at: " + screenshotPath);
+            } catch (IOException e) {
+                e.printStackTrace();
+                test.log(LogStatus.WARNING, "Failed to save screenshot: " + e.getMessage());
+            }
+        } else {
+            test.log(LogStatus.PASS, "Scenario passed: " + scenario.getName());
+        }
+        extent.flush();
+		
+    }
 
 	public static WebDriver getDriver()
 	{
