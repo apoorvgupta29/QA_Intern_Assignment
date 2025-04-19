@@ -31,9 +31,11 @@ public class Reportgeneration
     }
 
     @After
-    public void afterScenario(Scenario scenario) {
+    public void afterScenario(Scenario scenario) throws InterruptedException {
+    	WebDriver driver = getDriver();
         ExtentTest test = testThread.get();
         if (scenario.isFailed()) {
+        	Thread.sleep(1000);
             test.log(LogStatus.FAIL, "Scenario failed: " + scenario.getName());
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             String screenshotPath ="G:\\Intervue\\Login_Test\\Screenshots\\testcase_" + scenario.getName() + ".jpeg";
@@ -45,8 +47,14 @@ public class Reportgeneration
                 test.log(LogStatus.WARNING, "Failed to save screenshot: " + e.getMessage());
             }
         } else {
-            test.log(LogStatus.PASS, "Scenario passed: " + scenario.getName());
+            test.log(LogStatus.PASS, "Scenario passed: " + scenario.getName() );
         }
+        
+        if (driver != null) {
+            driver.quit();  
+        }
+
+        extent.endTest(test);
         extent.flush();
 		
     }

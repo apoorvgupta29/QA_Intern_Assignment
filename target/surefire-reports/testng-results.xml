@@ -2,26 +2,26 @@
 <testng-results total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-19T19:32:21Z" name="Suite" finished-at="2025-04-19T19:33:29Z" duration-ms="68693">
+  <suite started-at="2025-04-19T21:34:47Z" name="Suite" finished-at="2025-04-19T21:36:15Z" duration-ms="88037">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@29ba4338]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-19T19:32:21Z" name="Test" finished-at="2025-04-19T19:33:29Z" duration-ms="68693">
+    <test started-at="2025-04-19T21:34:47Z" name="Test" finished-at="2025-04-19T21:36:15Z" duration-ms="88037">
       <class name="testrunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T01:02:21Z" name="setUpClass" finished-at="2025-04-20T01:02:21Z" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T03:04:47Z" name="setUpClass" finished-at="2025-04-20T03:04:47Z" duration-ms="367" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@75769ab0]]>
+                <![CDATA[org.testng.TestRunner@385e36d4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T01:02:21Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-20T01:02:50Z" duration-ms="28948" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T03:04:47Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-20T03:05:28Z" duration-ms="40765" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T01:02:50Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-20T01:03:29Z" duration-ms="39401" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T03:05:28Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-20T03:06:15Z" duration-ms="46871" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -50,80 +50,52 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".cwhrSp"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d78c383856318d3ca37b4e263497777a, findElement [value, using]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49796}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49796/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d78c383856318d3ca37b4e263497777a]]>
+Command: [547cad5d4d964b3818d55c5d8f8c8b1d, findElement {value=cwhrSp, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61899/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 547cad5d4d964b3818d55c5d8f8c8b1d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".cwhrSp"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d78c383856318d3ca37b4e263497777a, findElement [value, using]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49796}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49796/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d78c383856318d3ca37b4e263497777a
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+Command: [547cad5d4d964b3818d55c5d8f8c8b1d, findElement {value=cwhrSp, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61899/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 547cad5d4d964b3818d55c5d8f8c8b1d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at pageObjects.LoginPage.clickSearch(LoginPage.java:32)
-	at stepdefinition.LoginTestCase.user_performs_some_actions(LoginTestCase.java:58)
-	at ✽.User performs some actions(file:///G:/Intervue/Login_Test/src/test/resources/features/login.feature:8)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:497)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:384)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:971)
-	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:456)
-	... 8 more
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:440)
-	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	... 3 more
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
-	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
-	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1478)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1423)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1423)
+	at pageObjects.LoginPage.logout(LoginPage.java:45)
+	at stepdefinition.LoginTestCase.user_log_out_successfully(LoginTestCase.java:69)
+	at ✽.User log out successfully(file:///G:/Intervue/Login_Test/src/test/resources/features/login.feature:9)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T01:03:29Z" name="tearDownClass" finished-at="2025-04-20T01:03:29Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T03:06:15Z" name="tearDownClass" finished-at="2025-04-20T03:06:15Z" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

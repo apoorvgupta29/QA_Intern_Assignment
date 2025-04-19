@@ -29,7 +29,8 @@ public class LoginPage {
 
     public void clickSearch() throws InterruptedException {
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-    	WebElement searchButton = driver.findElement(By.xpath("//span[@class='search_placeholder']"));
+    	WebElement searchButton = driver.findElement(By.className("//span[contains(@class,'HeaderSearch__SearchLensIconWrap')]"));
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
     	searchButton.click();
     }
     

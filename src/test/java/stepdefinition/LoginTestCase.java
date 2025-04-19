@@ -20,7 +20,7 @@ public class LoginTestCase  {
     
 	@Given("User is in Home page and Navigate to login page")
 		public void User_is_in_Home_page_and_navigate_to_login_page() throws InterruptedException {	
-        driver = new ChromeDriver();
+		driver = Reportgeneration.getDriver();
         driver.manage().window().maximize();
         driver.get("https://www.intervue.io");
         loginPage = new LoginPage(driver);
@@ -55,8 +55,7 @@ public class LoginTestCase  {
 	@When("User performs some actions")
 		public void user_performs_some_actions() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		loginPage.clickSearch();  // working
-		Thread.sleep(5000);
+//		loginPage.clickSearch();  // working
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		loginPage.Direct_hellopage();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -66,6 +65,7 @@ public class LoginTestCase  {
 
 	@Then("User log out successfully")
 	public void user_log_out_successfully() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		loginPage.logout();
         driver.quit();
 	}
