@@ -130,3 +130,18 @@ Add the following VM options to enable debug mode:
 -Dcucumber.options="--plugin debug"
 ```
 
+
+https://github.com/user-attachments/assets/73e6c616-276e-492e-ac26-0a23497b1130
+
+
+##Bug
+ Search tab is not working
+
+ 
+
+
+https://github.com/user-attachments/assets/b5b247fb-0340-4796-8348-234329c54c42
+
+
+
+
