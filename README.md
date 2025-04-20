@@ -134,7 +134,8 @@ Add the following VM options to enable debug mode:
 https://github.com/user-attachments/assets/73e6c616-276e-492e-ac26-0a23497b1130
 
 
-##Bug
+## Bug/Findings
+
  Search tab is not working
 
  
