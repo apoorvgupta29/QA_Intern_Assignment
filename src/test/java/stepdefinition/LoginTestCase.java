@@ -57,7 +57,10 @@ public class LoginTestCase  {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 //		loginPage.clickSearch();  // working
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		loginPage.Direct_hellopage();
+		if(loginPage.isUserLoggedIn()) {
+			loginPage.Direct_hellopage();
+		}
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 //		loginPage.searchTask();  // not working because of dialogue pop up (absolute functionality occurs)
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));

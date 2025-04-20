@@ -2,26 +2,26 @@
 <testng-results total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-19T21:34:47Z" name="Suite" finished-at="2025-04-19T21:36:15Z" duration-ms="88037">
+  <suite started-at="2025-04-20T06:51:07Z" name="Suite" finished-at="2025-04-20T06:52:31Z" duration-ms="84327">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@29ba4338]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-19T21:34:47Z" name="Test" finished-at="2025-04-19T21:36:15Z" duration-ms="88037">
+    <test started-at="2025-04-20T06:51:07Z" name="Test" finished-at="2025-04-20T06:52:31Z" duration-ms="84327">
       <class name="testrunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T03:04:47Z" name="setUpClass" finished-at="2025-04-20T03:04:47Z" duration-ms="367" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T12:21:07Z" name="setUpClass" finished-at="2025-04-20T12:21:07Z" duration-ms="219" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@385e36d4]]>
+                <![CDATA[org.testng.TestRunner@13f9ad9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T03:04:47Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-20T03:05:28Z" duration-ms="40765" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T12:21:07Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-20T12:21:39Z" duration-ms="32316" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T03:05:28Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-20T03:06:15Z" duration-ms="46871" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T12:21:39Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-20T12:22:31Z" duration-ms="51758" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -58,9 +58,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [547cad5d4d964b3818d55c5d8f8c8b1d, findElement {value=cwhrSp, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61899/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 547cad5d4d964b3818d55c5d8f8c8b1d]]>
+Command: [06d67076fac8e43093be1e3a359763af, findElement {using=class name, value=cwhrSp}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50924/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 06d67076fac8e43093be1e3a359763af]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".cwhrSp"}
@@ -69,9 +69,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [547cad5d4d964b3818d55c5d8f8c8b1d, findElement {value=cwhrSp, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61899/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 547cad5d4d964b3818d55c5d8f8c8b1d
+Command: [06d67076fac8e43093be1e3a359763af, findElement {using=class name, value=cwhrSp}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\APOOR\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50924/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 06d67076fac8e43093be1e3a359763af
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -86,8 +86,8 @@ Session ID: 547cad5d4d964b3818d55c5d8f8c8b1d
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at pageObjects.LoginPage.logout(LoginPage.java:45)
-	at stepdefinition.LoginTestCase.user_log_out_successfully(LoginTestCase.java:69)
+	at pageObjects.LoginPage.logout(LoginPage.java:58)
+	at stepdefinition.LoginTestCase.user_log_out_successfully(LoginTestCase.java:72)
 	at ✽.User log out successfully(file:///G:/Intervue/Login_Test/src/test/resources/features/login.feature:9)
 ]]>
             </full-stacktrace>
@@ -95,7 +95,7 @@ Session ID: 547cad5d4d964b3818d55c5d8f8c8b1d
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T03:06:15Z" name="tearDownClass" finished-at="2025-04-20T03:06:15Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner@29ba4338]" started-at="2025-04-20T12:22:31Z" name="tearDownClass" finished-at="2025-04-20T12:22:31Z" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

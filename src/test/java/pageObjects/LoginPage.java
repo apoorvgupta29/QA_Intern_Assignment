@@ -38,9 +38,22 @@ public class LoginPage {
     	driver.findElement(By.xpath("//input[@placeholder='Type what you want to search for']")).sendKeys("hello");
     	driver.findElement(By.xpath("//span[text()='hello']")).click();
     }
+    
+    
+    public boolean isUserLoggedIn() {
+        try {
+            // Adjust selector as per your app (e.g., user icon, logout button, etc.)
+            WebElement logoutButton = driver.findElement(By.cssSelector("a[href='/logout']"));
+            return logoutButton.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+    
     public void Direct_hellopage() throws InterruptedException {
     	driver.get("https://www.intervue.io/profile/search/interviews?query=hello");
     }
+    
     public void logout() throws InterruptedException {
     	driver.findElement(By.className("cwhrSp")).click();
     	driver.findElement(By.cssSelector("a[href='/logout']")).click();
