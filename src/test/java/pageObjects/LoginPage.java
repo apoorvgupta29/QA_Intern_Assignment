@@ -42,7 +42,6 @@ public class LoginPage {
     
     public boolean isUserLoggedIn() {
         try {
-            // Adjust selector as per your app (e.g., user icon, logout button, etc.)
             WebElement logoutButton = driver.findElement(By.cssSelector("a[href='/logout']"));
             return logoutButton.isDisplayed();
         } catch (NoSuchElementException e) {
